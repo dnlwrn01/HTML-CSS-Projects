@@ -1,0 +1,66 @@
+<!--TEXT OVER IMAGE EXAMPLE-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TEXT OVER IMAGE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+        /* Container holding the image and the text */
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        /* Bottom left text */
+        .bottom-left {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+        }
+
+        /* Top left text */
+        .top-left {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+        }
+
+        /* Top right text */
+        .top-right {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+        }
+
+        /* Bottom right text */
+        .bottom-right {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+        }
+
+        /* Centered text */
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        } 
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <img src="../assets/drink.jpg" alt="Snow" style="width:100%;">
+            <div class="bottom-left">From a company</div>
+            <div class="top-left">Wow this is cool</div>
+            <div class="top-right">It;s a drink</div>
+            <div class="bottom-right">that has bad marketing</div>
+            <div class="centered">With a name</div>
+          </div> 
+    </body>
+</html>

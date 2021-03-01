@@ -1,0 +1,53 @@
+<!--Footer Example-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CENTER IMAGE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: teal;
+            color: white;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+            font-weight: bold;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        </style>
+
+    </head>
+
+    <body>
+    
+    <div class="section">
+        <footer>
+            <div class="row">
+                <div class="column">
+                    <a href="#">This is a link</a>
+                    <a href="#">This is a link</a>
+                    <a href="#">This is a link</a>
+                </div>
+                <div class="column">
+                    <p>This is more information</p>
+                    <p>This is more information</p>
+                    <p>This is more information</p>
+                    <p>This is more information &copy;</p>
+                </div>
+            </div> 
+        </footer>
+    </div>
+
+    </body>
+</html>

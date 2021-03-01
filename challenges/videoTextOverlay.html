@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        
+        video {
+            width: 50%;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: large;
+            font-weight: bold;
+            
+        }
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <video controls autoplay muted loop>
+                <source src="../assets/city.mp4" type="video/mp4">
+              </video> 
+            <div class="centered">New York (maybe)</div>
+        </div>
+
+    </body>
+</html> 

@@ -1,0 +1,25 @@
+p {
+    color: white;
+    background-color: yellow;
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+} 
+
+.navigation {
+    background-color: darkgrey;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    text-shadow: 2px 2px blue;
+    font-size: 50px;
+}
