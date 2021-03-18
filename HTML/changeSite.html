@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" type="text/css" href="../CSS/changeMain.css">
+    <script src="../JavaScript/changeMain.js" defer></script>
   </head>
   <body>
     <!--MAIN NAVIGATION-->
@@ -185,21 +186,74 @@
     <!--FOOTER-->
     
     <section id="footer">
-      <div class="tab tab_3">
-        <h1>LINKS</h1>
+          <!-- Images used to open the lightbox -->
+      <div class="row">
+        <div class="column">
+          <img src="../assets/images/icons/smileyface1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="../assets/images/icons/smileyface2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="../assets/images/icons/smileyface1.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="../assets/images/icons/smileyface2.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
       </div>
-      <div class="wrapper wrapper_3">
-        <div id="links">
-          <a href="https://canopyplanet.org/about-us/">Canopy</a>
-          <a href="https://cleanclothes.org/about">Clean Clothes</a>
-          <a href="https://www.sustainable-fashion.com/about">Center for Sustainable Fashion</a> 
-          <a href="https://www.fairtradefederation.org/">Fair Trade Federation</a>
+
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="../assets/images/thumbnail_1.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="../assets/images/thumbnail_2.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="../assets/images/thumbnail_3.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="../assets/images/thumbnail_4.png" style="width:100%">
+          </div>
+
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail image controls -->
+          <div class="column">
+            <img class="demo" src="../assets/images/thumbnail_1.jpg" onclick="currentSlide(1)" alt="Nature">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="../assets/images/thumbnail_2.jpg" onclick="currentSlide(2)" alt="Snow">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="../assets/images/thumbnail_3.jpg" onclick="currentSlide(3)" alt="Mountains">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="../assets/images/thumbnail_4.png" onclick="currentSlide(4)" alt="Lights">
+          </div>
         </div>
-        <div id="legal-comment"> 
-          <p>All Rights Reserved &copy;</p>
-        </div>
-        </div>
-      </div>
+      </div> 
     </section>
     <!--END FOOTER-->
   </body>
